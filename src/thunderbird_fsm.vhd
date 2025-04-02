@@ -105,10 +105,10 @@ begin
 	-- CONCURRENT STATEMENTS --------------------------------------------------------	
 	f_Q_next(7) <= ((not(i_left)) and (not(i_right))) or (f_Q(0) or f_Q(3) or f_Q(6));
 	f_Q_next(6) <= i_left and i_right and not(f_Q(6));
-	f_Q_next(5) <= not(i_left) and i_right and not(f_Q(5)) and not(f_Q(4)) and not(f_Q(3));
+	f_Q_next(5) <= not(i_left) and i_right and f_Q(7);
 	f_Q_next(4) <= f_Q(5);
 	f_Q_next(3) <= f_Q(4);
-	f_Q_next(2) <= i_left and not(i_right) and not(f_Q(2)) and not(f_Q(1)) and not(f_Q(0));
+	f_Q_next(2) <= i_left and not(i_right) and f_Q(7);
 	f_Q_next(1) <= f_Q(2);
 	f_Q_next(0) <= f_Q(1);
     ---------------------------------------------------------------------------------
