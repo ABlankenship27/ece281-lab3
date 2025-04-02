@@ -1,7 +1,7 @@
 # Lab 3: Thunderbird Turn Signal
 
 Waveform:
-![Waveform from thunderbird_fsm_tb](myimage.png)
+![Waveform from thunderbird_fsm_tb](Lab3Waveform.png)
 
 VHDL for ECE 281 [Lab 3](https://usafa-ece.github.io/ece281-book/lab/lab3.html)
 
